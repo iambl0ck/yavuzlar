@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tebrikler!</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form onsubmit="saveHighScore(event)">
+          <input
+            type="text"
+            name="kullanici_adi"
+            id="kullanici_adi"
+            placeholder="Kullanıcı"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            disabled
+          >
+            Kaydet
+          </button>
+        </form>
+        <a class="btn" href="/sinav.html">Tekrar Oyna</a>
+        <a class="btn" href="/">Ana Sayfaya Dön</a>
+      </div>
+    </div>
+    <script src="end.js"></script>
+  </body>
+</html>
