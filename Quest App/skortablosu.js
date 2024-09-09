@@ -1,8 +1,15 @@
-const highScoresList = document.getElementById("highScoresList");
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScoresList = document.getElementById('highScoresList');
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-highScoresList.innerHTML = highScores
-  .map(score => {
-    return `<li class="high-score">${score.name} - ${score.score}</li>`;
-  })
-  .join("");
+
+highScores.sort((a, b) => b.score - a.score);
+
+highScoresList.innerHTML = highScores.map((score, index) => {
+    return `
+        <tr>
+            <td>${index + 1}</td>
+            <td>${score.name}</td>
+            <td>${score.score}</td>
+        </tr>
+    `;
+}).join('');

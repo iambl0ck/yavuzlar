@@ -1,26 +1,20 @@
 [
     {
-      "question": "Inside which HTML element do we put the JavaScript??",
-      "choice1": "<script>",
-      "choice2": "<javascript>",
-      "choice3": "<js>",
-      "choice4": "<scripting>",
-      "answer": 1
+        "question": "Hangi renk gökyüzünde sık görülür?",
+        "choice1": "Kırmızı",
+        "choice2": "Yeşil",
+        "choice3": "Mavi",
+        "choice4": "Sarı",
+        "answer": "3",
+        "difficulty": "1"
     },
     {
-      "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-      "choice1": "<script href='xxx.js'>",
-      "choice2": "<script name='xxx.js'>",
-      "choice3": "<script src='xxx.js'>",
-      "choice4": "<script file='xxx.js'>",
-      "answer": 3
-    },
-    {
-      "question": " How do you write 'Hello World' in an alert box?",
-      "choice1": "msgBox('Hello World');",
-      "choice2": "alertBox('Hello World');",
-      "choice3": "msg('Hello World');",
-      "choice4": "alert('Hello World');",
-      "answer": 4
+        "question": "Hangi gezegen Güneş Sistemi'nde en büyüktür?",
+        "choice1": "Mars",
+        "choice2": "Venüs",
+        "choice3": "Jüpiter",
+        "choice4": "Satürn",
+        "answer": "3",
+        "difficulty": "2"
     }
-  ]
+]

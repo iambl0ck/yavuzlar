@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Ekle</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <div id="addQuestion" class="flex-center flex-column">
+            <h1>Soru Ekle</h1>
+            <form id="questionForm">
+                <input type="text" id="question" placeholder="Soru" required>
+                <input type="text" id="choice1" placeholder="Seçenek A" required>
+                <input type="text" id="choice2" placeholder="Seçenek B" required>
+                <input type="text" id="choice3" placeholder="Seçenek C" required>
+                <input type="text" id="choice4" placeholder="Seçenek D" required>
+                <fieldset>
+                    <legend>Doğru Cevap</legend>
+                    <label><input type="radio" name="answer" value="1" required> A</label>
+                    <label><input type="radio" name="answer" value="2" required> B</label>
+                    <label><input type="radio" name="answer" value="3" required> C</label>
+                    <label><input type="radio" name="answer" value="4" required> D</label>
+                </fieldset>
+                <label for="difficulty">Zorluk Derecesi</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="1">Kolay</option>
+                    <option value="2">Orta</option>
+                    <option value="3">Zor</option>
+                    <option value="4">Çok Zor</option>
+                </select>
+                <button type="submit" class="btn">Soru Ekle</button>
+            </form>
+            <a class="btn" href="/">Ana Sayfaya Dön</a>
+        </div>
+    </div>
+    <script src="soruekle.js"></script>
+</body>
+</html>
